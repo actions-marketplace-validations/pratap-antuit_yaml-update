@@ -18,7 +18,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v3
@@ -47,7 +47,7 @@ jobs:
     name: Make a test run
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac
       - name: Run
         uses: ./
         with:
